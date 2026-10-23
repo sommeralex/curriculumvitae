@@ -201,7 +201,8 @@ const translations = {
     "career.c6.loc": "Graz & Wien",
     "career.c6.lead": "Entwicklung nativer mobiler Applikationen im anwendungsorientierten FFG-geförderten Forschungskompetenzzentrum (K2/COMET) an der Schnittstelle von Wirtschaft und Wissenschaft:",
     "career.c6.item1": "Konzeption & native Implementierung der <strong>Raiffeisen Club Mobile App</strong> (Vorteils- und Gutschein-Applikation für Raiffeisen Club-Mitglieder).",
-    "career.c6.item2": "Begleitende angewandte Forschung an neuartigen mobilen Interaktionsmustern und standortbasierten Mehrwertdiensten vor dem Eintritt bei der OMV.",
+    "career.c6.item2": "Entwicklungsarbeit am öffentlich geförderten Projekt <strong>»Sankt Onlein«</strong> (Social-Media- und Vernetzungsplattform für digitale Teilhabe & Inklusion; als Good-Practice-Initiative für IKT-Kompetenzen dokumentiert im <a href=\"https://forschungsnetzwerk.ams.at/dam/jcr:0f8880c7-eb1b-4c50-aeca-1a61e2df9fbf/AMS_report_117.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"inline-link\"><strong>AMS Report 117 (PDF)</strong></a>).",
+    "career.c6.item3": "Begleitende angewandte Forschung an neuartigen mobilen Interaktionsmustern und standortbasierten Mehrwertdiensten vor dem Eintritt bei der OMV.",
 
     "career.c7.period": "2008 – 2010",
     "career.c7.role": "Network Operations & Security Infrastructure",
@@ -264,6 +265,11 @@ const translations = {
     "academic.item6.title": "International Conference ANT / iiWAS (Paris)",
     "academic.item6.journal": "<strong>Ambient Systems, Networks and Technologies (Paris 2010)</strong>",
     "academic.item6.desc": "Vortrag und Autorenbeitrag im Rahmen der internationalen Fachtagung in Paris-Gennevilliers über mobile, standortbasierte Messaging-Architekturen.",
+    "academic.item7.badge": "F&E-Förderprojekt · IKT-Inklusion",
+    "academic.item7.title": "Forschungsprojekt »Sankt Onlein« (AMS Report 117)",
+    "academic.item7.journal": "<strong>Arbeitsmarktservice Österreich (Forschungsnetzwerk) · AMS Report 117</strong>",
+    "academic.item7.desc": "Entwicklungsarbeit an der durch öffentliche Forschungsgelder geförderten österreichischen Social-Media- und Inklusionsplattform »Sankt Onlein« bei evolaris. Im offiziellen Forschungsbericht des AMS Österreich als Best-Practice-Initiative für IKT-Kompetenzen und digitale Teilhabe hervorgehoben.",
+    "academic.item7.btn": "AMS Forschungsreport ansehen (PDF)",
 
     // Weiterbildung (MIT & Coursera)
     "education.tag": "Kontinuierliche Exzellenz",
@@ -600,7 +606,8 @@ const translations = {
     "career.c6.loc": "Graz & Vienna",
     "career.c6.lead": "Engineering native mobile applications at the applied FFG-funded research competence center (COMET K2) bridging academia and industry:",
     "career.c6.item1": "Conceptualization and native development of the <strong>Raiffeisen Club Mobile App</strong> (benefits and loyalty voucher platform for Raiffeisen Club members).",
-    "career.c6.item2": "Applied research into emerging mobile interaction paradigms and location-based value-added services prior to joining OMV.",
+    "career.c6.item2": "Engineering work on the research-funded initiative <strong>“Sankt Onlein”</strong> (platform for digital inclusion and community empowerment; documented as an ICT good-practice initiative in the <a href=\"https://forschungsnetzwerk.ams.at/dam/jcr:0f8880c7-eb1b-4c50-aeca-1a61e2df9fbf/AMS_report_117.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"inline-link\"><strong>AMS Report 117 (PDF)</strong></a>).",
+    "career.c6.item3": "Applied research into emerging mobile interaction paradigms and location-based value-added services prior to joining OMV.",
 
     "career.c7.period": "2008 – 2010",
     "career.c7.role": "Network Operations & Security Infrastructure",
@@ -663,6 +670,11 @@ const translations = {
     "academic.item6.title": "International Conference ANT / iiWAS (Paris)",
     "academic.item6.journal": "<strong>Ambient Systems, Networks and Technologies (Paris 2010)</strong>",
     "academic.item6.desc": "Presentation and published author contribution at the international conference in Paris-Gennevilliers on mobile spatial communication architectures.",
+    "academic.item7.badge": "Research Grant · Digital Inclusion",
+    "academic.item7.title": "Research Initiative “Sankt Onlein” (AMS Report 117)",
+    "academic.item7.journal": "<strong>Public Employment Service Austria (Research Network) · AMS Report 117</strong>",
+    "academic.item7.desc": "Software engineering on the research-funded Austrian social media and inclusion platform “Sankt Onlein” at evolaris. Featured in the Austrian Public Employment Service’s official research publication as a good practice model for ICT literacy and digital participation.",
+    "academic.item7.btn": "View AMS Research Report (PDF)",
 
     // Continuing Education (MIT & Coursera)
     "education.tag": "Continuous Excellence",

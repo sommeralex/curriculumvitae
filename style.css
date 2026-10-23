@@ -111,6 +111,17 @@ a, a:link, a:visited {
   text-decoration: none;
 }
 
+.inline-link {
+  color: var(--brand-accent) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px;
+  font-weight: 600;
+  transition: opacity var(--trans-fast);
+}
+.inline-link:hover {
+  opacity: 0.8;
+}
+
 /* Layout Utilities */
 .container {
   width: 100%;
