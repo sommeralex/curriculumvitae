@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="meta.title">DI Alexander Sommer — IT-Führungskraft & Digitaler Humanismus</title>
+  <meta name="description" content="Interaktiver Lebenslauf und Portfolio von DI Alexander Sommer. 15+ Jahre Führungserfahrung in kritischer Infrastruktur, KI-Strategie, wissenschaftliche Arbeiten, Unternehmertum und Gartner Seat Holder." data-i18n-content="meta.desc">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=2.3">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230f172a'/><text x='50' y='64' font-family='system-ui,sans-serif' font-size='40' font-weight='800' fill='%2360a5fa' text-anchor='middle'>AS</text></svg>">
+</head>
+<body>
+  <!-- Executive Header & Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" id="brand-link">
+        <span class="brand-monogram">AS</span>
+        <div class="brand-text">
+          <span class="brand-name" data-i18n="header.name">DI ALEXANDER SOMMER</span>
+          <span class="brand-tag" data-i18n="header.subtitle">IT-Führungskraft · KRITIS · KI</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation (Executive Two-Row Format) -->
+      <nav class="main-nav" id="main-nav">
+        <a href="#ueber-mich" class="nav-link" title="Philosophie, Werte & Profil">
+          <span class="nav-title" data-i18n="header.nav.about_title">Profil</span>
+          <span class="nav-sub" data-i18n="header.nav.about_sub">Werte &amp; Mindset</span>
+        </a>
+        <a href="#pep-fuehrung" class="nav-link" title="Führungskompetenz & Audit">
+          <span class="nav-title" data-i18n="header.nav.pep_title">Führung</span>
+          <span class="nav-sub" data-i18n="header.nav.pep_sub">Audit &amp; Benchmark</span>
+        </a>
+        <a href="#gartner" class="nav-link" title="Gartner Executive Advisory">
+          <span class="nav-title" data-i18n="header.nav.gartner_title">Gartner</span>
+          <span class="nav-sub" data-i18n="header.nav.gartner_sub">Executive Advisory</span>
+        </a>
+        <a href="#werdegang" class="nav-link" title="Beruflicher Werdegang & KRITIS">
+          <span class="nav-title" data-i18n="header.nav.career_title">Werdegang</span>
+          <span class="nav-sub" data-i18n="header.nav.career_sub">KRITIS &amp; Stationen</span>
+        </a>
+        <a href="#unternehmertum" class="nav-link" title="Startups, Erfindungen & Algo-Trading">
+          <span class="nav-title" data-i18n="header.nav.ventures_title">Ventures</span>
+          <span class="nav-sub" data-i18n="header.nav.ventures_sub">Startups &amp; Algo</span>
+        </a>
+        <a href="#wissenschaft" class="nav-link" title="Wissenschaftliche Publikationen & Patente">
+          <span class="nav-title" data-i18n="header.nav.science_title">Forschung</span>
+          <span class="nav-sub" data-i18n="header.nav.science_sub">Patente &amp; Paper</span>
+        </a>
+        <a href="#weiterbildung" class="nav-link" title="M.I.T. & Coursera Spitzen-Weiterbildung">
+          <span class="nav-title" data-i18n="header.nav.education_title">Weiterbildung</span>
+          <span class="nav-sub" data-i18n="header.nav.education_sub">MIT &amp; Coursera</span>
+        </a>
+        <a href="#ki-projekte" class="nav-link" title="Hands-on KI & GitHub Repositories">
+          <span class="nav-title" data-i18n="header.nav.ai_title">Code &amp; KI</span>
+          <span class="nav-sub" data-i18n="header.nav.ai_sub">GitHub-Portfolio</span>
+        </a>
+      </nav>
+
+      <!-- Executive Header Actions -->
+      <div class="header-actions">
+        <!-- Sleek Language Switcher (DE / EN) -->
+        <div class="lang-switcher" role="group" aria-label="Language switcher">
+          <button type="button" class="lang-btn active" data-lang="de" title="Deutsch">DE</button>
+          <span class="lang-divider">/</span>
+          <button type="button" class="lang-btn" data-lang="en" title="English">EN</button>
+        </div>
+
+        <!-- Discretion / Confidentiality Mode Toggle -->
+        <button class="header-action-pill" id="discretion-btn" title="Diskretions-Filter: Firmennamen anonymisieren oder im Klartext anzeigen" aria-label="Diskretionsmodus">
+          <svg class="pill-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+          <span id="discretion-label" data-i18n="header.discretion">Diskretion</span>
+        </button>
+
+        <!-- Confidential Area Quick Jump & Indicator -->
+        <button class="header-action-pill" id="confidential-modal-btn" title="Vertrauliche Einblicke & Referenzen für Entscheidungsträger">
+          <span class="pill-icon" id="lock-indicator-icon">🔒</span>
+          <span id="confidential-status-text" data-i18n="header.confidential">Vertraulich</span>
+        </button>
+
+        <!-- Dark/Light Mode Switcher -->
+        <button class="theme-icon-btn" id="theme-toggle-btn" title="Hell-/Dunkelmodus umschalten" aria-label="Theme umschalten">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menü öffnen">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <!-- Apple-style Razor-Thin Scroll Progress Bar -->
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-glow"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="pulse-dot"></span>
+            <span data-i18n="hero.status">Wien · 15+ Jahre Führung & IT-Transformation</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span data-i18n="hero.title">Technologie dient dem Menschen.</span>
+            <span class="hero-highlight" data-i18n="hero.highlight">Nicht umgekehrt.</span>
+          </h1>
+
+          <p class="hero-subtitle" data-i18n-html="hero.subtitle">
+            <strong>DI Alexander Sommer</strong> — IT-Führungskraft mit nachweisbarer Praxiserfahrung in Großunternehmen und kritischer Infrastruktur (KRITIS). Verbindet strategische Governance, 7 Jahre Gartner-Expertise und Empathie mit eigener hands-on Entwicklung in Künstlicher Intelligenz.
+          </p>
+
+          <div class="hero-quote-card">
+            <div class="quote-mark">“</div>
+            <p class="quote-body" data-i18n="hero.quote">
+              Technologie wird für mich nicht daran gemessen, wie viel sie automatisiert – sondern daran, wie wirksam sie Menschen entlastet, Sicherheit garantiert und nachhaltigen Mehrwert stiftet.
+            </p>
+            <div class="quote-author" data-i18n="hero.quote_author">— Leitgedanke des <em>Digitalen Humanismus</em></div>
+          </div>
+
+          <!-- Hero Metrics with Apple-grade Dynamic Count-Up Animation -->
+          <div class="hero-stats-grid">
+            <div class="stat-card spotlight-card">
+              <span class="stat-number" data-count-target="10" data-prefix="Top " data-suffix="%">Top 10%</span>
+              <span class="stat-label" data-i18n="hero.stat.pep">Top 10% Leadership Benchmark (Externes Management-Audit)</span>
+            </div>
+            <div class="stat-card spotlight-card">
+              <span class="stat-number" data-count-target="7" data-suffix=" Jahre" data-i18n="hero.stat.gartner_num">7 Jahre</span>
+              <span class="stat-label" data-i18n="hero.stat.gartner">Gartner Seat Holder (Executive & Technical)</span>
+            </div>
+            <div class="stat-card spotlight-card">
+              <span class="stat-number" data-count-target="85" data-suffix="+">85+</span>
+              <span class="stat-label" data-i18n="hero.stat.kritis">Systeme in geschäftskritischer KRITIS-Verantwortung</span>
+            </div>
+            <div class="stat-card spotlight-card">
+              <span class="stat-number" data-count-target="50000" data-format="currency" data-suffix=" €" data-i18n="hero.stat.savings_num">50.000 €</span>
+              <span class="stat-label" data-i18n="hero.stat.savings">Konkrete Budget-Einsparung im laufenden Jahr</span>
+            </div>
+          </div>
+
+          <!-- Quick Actions -->
+          <div class="hero-actions">
+            <a href="#werdegang" class="btn btn-primary" id="btn-explore">
+              <span data-i18n="hero.btn.explore">Werdegang erkunden</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="assets/Lebenslauf_Alexander_Sommer.pdf" class="btn btn-secondary" target="_blank" id="btn-download-cv">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              <span data-i18n="hero.btn.cv">CV als PDF ansehen</span>
+            </a>
+            <a href="#kontakt" class="btn btn-outline" id="btn-contact-jump">
+              <span data-i18n="hero.btn.contact">Kontakt aufnehmen</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="portrait-wrapper">
+            <div class="portrait-backdrop"></div>
+            <img src="assets/portrait.jpg" alt="DI Alexander Sommer" class="portrait-img" id="hero-portrait">
+          </div>
+          <!-- Grounded Key Credentials beneath the photo -->
+          <div class="portrait-credentials">
+            <div class="credential-pill">
+              <span class="credential-icon">🎓</span>
+              <div class="credential-text">
+                <strong data-i18n="hero.badge.tu">DI Wirtschaftsinformatik</strong>
+                <span data-i18n="hero.badge.tu_sub">TU Wien (Abschlussarbeiten publiziert)</span>
+              </div>
+            </div>
+            <div class="credential-pill">
+              <span class="credential-icon">💡</span>
+              <div class="credential-text">
+                <strong data-i18n="hero.badge.patent">Erteiltes Patent AT 519762</strong>
+                <span data-i18n="hero.badge.patent_sub">Hardware-Privatsphäre (FFG-gefördert)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: PROFIL & LEITGEDANKE -->
+    <section class="section section-alt" id="ueber-mich">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="values.tag">Philosophie & Werte</span>
+          <h2 class="section-title" data-i18n="values.title">Führung mit Weitblick, Bescheidenheit und Substanz</h2>
+          <p class="section-desc" data-i18n="values.desc">
+            Vom Software-Pionier und Algo-Trader zum erfahrenen IT-Leader für kritische Großinfrastrukturen. Ein Profil, das strategische Entscheidungsreife mit technologischem Tiefgang vereint.
+          </p>
+        </div>
+
+        <div class="profile-cards-grid">
+          <div class="profile-card">
+            <div class="card-icon-box">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3 data-i18n="values.card1.title">Führung als Gestaltungsaufgabe</h3>
+            <p data-i18n="values.card1.desc">
+              Teams wachsen durch Vertrauen, Klarheit und Handlungsspielraum. Führung bedeutet für mich nicht Delegation von oben herab, sondern das Beseitigen von Hindernissen, gezieltes Mentoring und das Einfordern klarer gegenseitiger Erwartungen.
+            </p>
+            <ul class="check-list">
+              <li data-i18n="values.card1.item1">Stärken von Eigenverantwortung & Innovation im Team</li>
+              <li data-i18n="values.card1.item2">Souveränes Stakeholder- & Gremienmanagement</li>
+              <li data-i18n="values.card1.item3">Strukturierte Begleitung in Change-Prozessen (Change4Growth)</li>
+            </ul>
+          </div>
+
+          <div class="profile-card">
+            <div class="card-icon-box">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3 data-i18n="values.card2.title">Kritische Infrastruktur (KRITIS)</h3>
+            <p data-i18n="values.card2.desc">
+              In Bereichen, in denen Ausfälle gesellschaftliche Konsequenzen haben, gelten höchste Anforderungen an Ausfallsicherheit, NIS2/KRITIS-Compliance, Datensouveränität und durchdachte Vendor-Governance.
+            </p>
+            <ul class="check-list">
+              <li data-i18n="values.card2.item1">Verantwortung für 85+ Digital-Workplace-Kernsysteme</li>
+              <li data-i18n="values.card2.item2">M365-Governance im Spannungsfeld digitaler Souveränität</li>
+              <li data-i18n="values.card2.item3">Harmonisierung & Konsolidierung historisch gewachsener Applikationslandschaften</li>
+            </ul>
+          </div>
+
+          <div class="profile-card">
+            <div class="card-icon-box">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4M12 8h.01"></path></svg>
+            </div>
+            <h3 data-i18n="values.card3.title">Wissenschaft & Eigene Praxis</h3>
+            <p data-i18n="values.card3.desc">
+              Keine blinde Hype-Gläubigkeit. Als Diplomingenieur der TU Wien und kontinuierlicher Entwickler prüfe ich neue Technologien (Agentic AI, MCP, LLMs) zuerst selbst in Code und Prototypen, bevor ich sie für das Unternehmen empfehle.
+            </p>
+            <ul class="check-list">
+              <li data-i18n="values.card3.item1">Masterarbeit & Bakkalaureatsarbeit mit „Sehr gut“ (beide publiziert)</li>
+              <li data-i18n="values.card3.item2">Erteilter Patentschutz für Hardware-Privatsphäre</li>
+              <li data-i18n="values.card3.item3">Hands-on Erfahrung mit Python, AI-Agents, WebAssembly</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: FÜHRUNGSKOMPETENZ & PEP POTENZIALEINSCHÄTZUNG -->
+    <section class="section" id="pep-fuehrung">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="pep.tag">Evidenzbasiertes Management-Audit</span>
+          <h2 class="section-title" data-i18n="pep.title">Führungskompetenz: Unabhängiges Leadership-Assessment</h2>
+          <p class="section-desc" data-i18n="pep.desc">
+            Objektive Diagnostik statt Selbstlob: 2023 durchlief Alexander Sommer ein standardisiertes, externes Führungskräfte-Assessment (IMDE Potenzialeinschätzung / PEP) im verhaltensbasierten Benchmark mit erfahrenen Führungskräften.
+          </p>
+        </div>
+
+        <div class="pep-grid">
+          <div class="pep-score-card">
+            <div class="pep-badge-header">
+              <span class="pep-benchmark-tag" data-i18n="pep.benchmark_tag">Externer Benchmark: Top 10%</span>
+              <span class="pep-date" data-i18n="pep.date">Standardisiertes Audit (IMDE)</span>
+            </div>
+
+            <div class="pep-big-result">
+              <span class="pep-percentile">Top 10%</span>
+              <span class="pep-label" data-i18n="pep.percentile_label">im Gesamt-Benchmark erfahrener Führungskräfte</span>
+            </div>
+
+            <p class="pep-summary-text" data-i18n="pep.quote">
+              „Im Führungsprofil sehr hohe Ausprägungen wie die oberen 10% der Benchmarkgruppe. Sowohl im methodischen Management als auch im Leadership in der Führung und Entwicklung von Mitarbeitenden.“
+            </p>
+
+            <div class="pep-bars">
+              <div class="bar-item">
+                <div class="bar-header">
+                  <span data-i18n="pep.bar1.label">Methodisches Management & Entscheidungsstärke</span>
+                  <strong data-i18n="pep.bar1.val">Höchste Ausprägung</strong>
+                </div>
+                <div class="bar-track"><div class="bar-fill" style="width: 95%;"></div></div>
+              </div>
+
+              <div class="bar-item">
+                <div class="bar-header">
+                  <span data-i18n="pep.bar2.label">Leadership: Fördern & Entwickeln von Teams</span>
+                  <strong data-i18n="pep.bar2.val">Übertrifft Benchmark</strong>
+                </div>
+                <div class="bar-track"><div class="bar-fill" style="width: 92%;"></div></div>
+              </div>
+
+              <div class="bar-item">
+                <div class="bar-header">
+                  <span data-i18n="pep.bar3.label">Innovator & Strukturierter Ideenbringer</span>
+                  <strong data-i18n="pep.bar3.val">Höchste Ausprägung</strong>
+                </div>
+                <div class="bar-track"><div class="bar-fill" style="width: 96%;"></div></div>
+              </div>
+
+              <div class="bar-item">
+                <div class="bar-header">
+                  <span data-i18n="pep.bar4.label">Belastbarkeit, Reflexionsfähigkeit & Werte</span>
+                  <strong data-i18n="pep.bar4.val">Hoch ausgeprägt</strong>
+                </div>
+                <div class="bar-track"><div class="bar-fill" style="width: 90%;"></div></div>
+              </div>
+            </div>
+
+            <div class="pep-doc-preview">
+              <img src="assets/pep_thumb.png" alt="PEP Standortbestimmung" class="doc-thumb" id="pep-thumb-img">
+              <div class="thumb-desc">
+                <strong data-i18n="pep.doc.title">Offizieller Auszug: Leadership Assessment</strong>
+                <span data-i18n="pep.doc.sub">Personal Profile Consulting / IMDE · 6 Seiten Audit</span>
+                <button class="doc-view-btn" id="view-pep-modal-btn" data-i18n="pep.doc.btn">Gutachten einsehen</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pep-insights-card">
+            <h3 class="card-title" data-i18n="pep.insights.title">Authentische Stärken & reflektierte Reife</h3>
+            <p class="muted-intro" data-i18n="pep.insights.intro">
+              Bescheidenheit zeichnet sich vor allem dadurch aus, die eigenen Muster zu kennen und bewusst zu reflektieren:
+            </p>
+
+            <div class="insight-block">
+              <div class="insight-icon">🎯</div>
+              <div class="insight-body">
+                <h4 data-i18n="pep.insight1.title">Entscheider & strukturierter Ideenbringer</h4>
+                <p data-i18n="pep.insight1.desc">
+                  Im unabhängigen Gutachten als profilierter Impulsgeber beschrieben: Wenn Projekte stocken oder komplexe Anforderungen unübersichtlich wirken, erarbeitet er strukturierte, fundierte Lösungswege und treibt getroffene Entscheidungen zielgerichtet voran.
+                </p>
+              </div>
+            </div>
+
+            <div class="insight-block">
+              <div class="insight-icon">🌱</div>
+              <div class="insight-body">
+                <h4 data-i18n="pep.insight2.title">Förderer & Entwickler von Talenten</h4>
+                <p data-i18n="pep.insight2.desc">
+                  Übertrifft die Benchmark im Rollenverständnis des fördernden Leaders. Räumt Mitarbeitenden bewusst Freiheiten ein, um „größer zu denken“ und an anspruchsvollen Herausforderungen zu wachsen.
+                </p>
+              </div>
+            </div>
+
+            <div class="insight-block highlight-reflection">
+              <div class="insight-icon">🔍</div>
+              <div class="insight-body">
+                <h4 data-i18n="pep.insight3.title">Reflexionspunkt: Achtsamkeit bei Innovationskraft & Rahmen</h4>
+                <p data-i18n-html="pep.insight3.desc">
+                  Ein wertvolles Ergebnis des Assessments: Wer vor Ideen und Energie sprüht, muss achtsam sein, andere nicht mit zu vielen Neuerungen auf einmal zu konfrontieren. Daher legt Alexander Sommer heute größten Wert auf <strong>Erwartungsgespräche zu Beginn jeder Kooperation</strong> und bewusstes aktives Zuhören.
+                </p>
+              </div>
+            </div>
+
+            <!-- References Mention -->
+            <div class="references-preview-box">
+              <div class="ref-header">
+                <strong data-i18n="pep.ref.title">Referenzen auf Anfrage verfügbar (u.a.):</strong>
+              </div>
+              <ul class="ref-list">
+                <li>
+                  <span class="ref-role" data-i18n="pep.ref1.role">Leitungsebene Cybersicherheit (Bundesbehörde)</span>
+                </li>
+                <li>
+                  <span class="ref-role" data-i18n="pep.ref2.role">CIO im internationalen Handel (begann unter Alexander Sommers Führung)</span>
+                </li>
+              </ul>
+              <div class="ref-footer-note">
+                <span class="confidential-lock-badge">🔒 Auf Anfrage</span> <span data-i18n="pep.ref.protected">Konkrete Namen und direkte Kontaktdaten nenne ich Ihnen gerne vertraulich auf persönliche Anfrage.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: GARTNER SEAT HOLDER (7 JAHRE VERSTÄNDLICH ERKLÄRT) -->
+    <section class="section section-alt" id="gartner">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="gartner.tag">Strategischer Wissensvorsprung</span>
+          <h2 class="section-title" data-i18n="gartner.title">7 Jahre Gartner Seat Holder: Was bedeutet das?</h2>
+          <p class="section-desc" data-i18n="gartner.desc">
+            Gartner ist das weltweit renommierteste Forschungs- und Beratungshaus für IT. Doch was macht ein „Seat Holder“ eigentlich in der Praxis?
+          </p>
+        </div>
+
+        <div class="gartner-explainer-card">
+          <div class="gartner-intro-row">
+            <div class="gartner-badge-box">
+              <span class="gartner-years" data-i18n="gartner.years">7</span>
+              <span class="gartner-years-text" data-i18n="gartner.years_text">Jahre kontinuierlicher Seat Holder</span>
+            </div>
+            <div class="gartner-text-block">
+              <h3 data-i18n="gartner.box.title">Kein gewöhnliches Lese-Abo, sondern ein direkter Expertenkanal</h3>
+              <p data-i18n-html="gartner.box.desc">
+                Ein Gartner Seat Holder hat <strong>persönlichen Zugang zu führenden weltweiten Analysten</strong>, geprüften Kosten-Benchmarks, Audit-Kriterien und dem Magic Quadrant. Es ist das vertrauliche Sparring, das Führungskräften hilft, Hypes von echtem Unternehmensnutzen zu trennen – bevor Millionen investiert werden.
+              </p>
+            </div>
+          </div>
+
+          <div class="gartner-phases-grid">
+            <div class="gartner-phase-card">
+              <div class="phase-meta">
+                <span class="phase-tag" data-i18n="gartner.phase1.tag">Phase 1 · 2018 bis 2022</span>
+                <span class="phase-title" data-i18n="gartner.phase1.title">Gartner Executive Membership</span>
+              </div>
+              <h4 data-i18n="gartner.phase1.subtitle">Strategischer Fokus auf Geschäftsführungsebene</h4>
+              <p class="phase-org-lead" data-i18n="gartner.phase1.org">Als Account Holder bei der Wiener Wohnen Kundenservice GmbH:</p>
+              <ul>
+                <li data-i18n="gartner.phase1.item1">Unabhängige Beratung von Geschäftsführung & CIO bei Digitalisierungsstrategien</li>
+                <li data-i18n="gartner.phase1.item2">Einführung systematischer digitaler Reifegradmessungen und Trendradare</li>
+                <li data-i18n="gartner.phase1.item3">Benchmarken kommunaler Dienstleistungen gegen internationale Best Practices</li>
+                <li data-i18n="gartner.phase1.item4">Schutz vor überteuerten Softwareverträgen durch vertrauliche Vertrags- und Preisprüfungen</li>
+              </ul>
+            </div>
+
+            <div class="gartner-phase-card">
+              <div class="phase-meta">
+                <span class="phase-tag" data-i18n="gartner.phase2.tag">Phase 2 · 2022 bis heute</span>
+                <span class="phase-title" data-i18n="gartner.phase2.title">Gartner Technical Membership</span>
+              </div>
+              <h4 data-i18n="gartner.phase2.subtitle">Technologischer Tiefgang & KRITIS-Architektur</h4>
+              <p class="phase-org-lead" data-i18n="gartner.phase2.org">Als Account Holder bei der Austrian Power Grid AG (APG):</p>
+              <ul>
+                <li data-i18n="gartner.phase2.item1">Deep-Dive in Applikations-Harmonisierung (Konsolidierung von 340+ auf 85 Kernsysteme)</li>
+                <li data-i18n="gartner.phase2.item2">Architektur-Reviews zu Microsoft 365, DMS 2.0 und digitaler Souveränität</li>
+                <li data-i18n="gartner.phase2.item3">Auswahl und Bewertung von Nischen- und Enterprise-Vendors nach strengen KRITIS-Kriterien</li>
+                <li data-i18n="gartner.phase2.item4">Praktische Einsparungen: z.B. 40.000 €/Jahr durch Neuausrichtung der Lizenz-Governance</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="gartner-quote-footer">
+            <div class="icon-bulb">💡</div>
+            <div class="quote-content">
+              <strong data-i18n="gartner.quote.bold">Der Mehrwert für Arbeitgeber:</strong> 
+              <span data-i18n="gartner.quote.text">„Mit Gartner-Zugang muss man das Rad nie neu erfinden. Man sieht sofort, welche Architekturen weltweit scheitern und welche skalieren. Das spart Unternehmen teure Fehlentscheidungen, monatelange Evaluierungen und stärkt die Verhandlungsposition gegenüber Softwaregiganten massiv.“</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: BERUFLICHER WERDEGANG & WIRKUNG -->
+    <section class="section" id="werdegang">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="career.tag">Berufliche Stationen</span>
+          <h2 class="section-title" data-i18n="career.title">Erfahrung, die Verantwortung trägt</h2>
+          <p class="section-desc" data-i18n="career.desc">
+            Über 15 Jahre kontinuierliche Führungs- und Projekterfahrung im regulierten Umfeld, bei Konzernen und kommunalen Leitbetrieben.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="timeline-filter-bar">
+          <span class="filter-label" data-i18n="career.filter.label">Filter nach Schwerpunkt:</span>
+          <div class="filter-buttons" id="timeline-filters">
+            <button class="filter-btn active" data-filter="all" data-i18n="career.filter.all">Alle Stationen</button>
+            <button class="filter-btn" data-filter="kritis" data-i18n="career.filter.kritis">KRITIS & Führung</button>
+            <button class="filter-btn" data-filter="innovation" data-i18n="career.filter.innovation">Digitalisierung & M365</button>
+            <button class="filter-btn" data-filter="project" data-i18n="career.filter.project">Großprojekte & OMV</button>
+          </div>
+        </div>
+
+        <!-- Timeline Items -->
+        <div class="interactive-timeline" id="timeline-list">
+          
+          <!-- Station 1: APG Workplace -->
+          <div class="timeline-card" data-category="kritis innovation">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="card-inner">
+              <div class="card-top">
+                <span class="timeline-period" data-i18n="career.c1.period">09/2025 – heute</span>
+                <span class="company-badge ap-badge" data-company="apg">Austrian Power Grid AG (APG)</span>
+              </div>
+              <h3 class="role-title" data-i18n="career.c1.role">Teamleiter Digital Workplace Solutions</h3>
+              <p class="role-location" data-i18n="career.c1.loc">Wien · Kritische Infrastruktur (Stromübertragungsnetz)</p>
+
+              <div class="card-body-text">
+                <p data-i18n="career.c1.lead">
+                  Verantwortung für eine geschäftskritische Applikationslandschaft (>85 Systeme) im hochregulierten Sektor der Energieversorgung.
+                </p>
+                <div class="project-tags-group">
+                  <span class="badge-tag">DMS 2.0</span>
+                  <span class="badge-tag">Intranet NEU</span>
+                  <span class="badge-tag">M365 Governance</span>
+                  <span class="badge-tag">Change4Growth</span>
+                  <span class="badge-tag">KI-Pilotierung (n8n)</span>
+                </div>
+                <ul class="bullet-list">
+                  <li data-i18n-html="career.c1.item1">Initiator und Gesamtleitung der strategischen Modernisierungsvorhaben <strong>DMS 2.0</strong> (Neuausrichtung des Dokumentenmanagements) und <strong>Intranet NEU</strong> auf Basis modernster Microsoft 365 Standards.</li>
+                  <li data-i18n-html="career.c1.item2">Kritische Hinterfragung und Ausgestaltung der M365-Governance im Spannungsfeld zwischen Cloud-Vorteilen und <em>digitaler Souveränität</em>.</li>
+                  <li data-i18n-html="career.c1.item3">Themenverantwortung für die <em>Digital Employee Experience</em> im konzernweiten Transformationsprogramm <em>Change4Growth</em>.</li>
+                  <li data-i18n-html="career.c1.item4">Innovation Peer: Pilotierung pragmatischer KI- und Automatisierungslösungen (u.a. n8n, KI-gestützte Entwicklungsworkflows).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Station 2: APG Corporate Apps -->
+          <div class="timeline-card" data-category="kritis">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="card-inner">
+              <div class="card-top">
+                <span class="timeline-period" data-i18n="career.c2.period">10/2022 – 09/2025</span>
+                <span class="company-badge ap-badge" data-company="apg">Austrian Power Grid AG (APG)</span>
+              </div>
+              <h3 class="role-title" data-i18n="career.c2.role">Teamleiter Corporate Applications</h3>
+              <p class="role-location" data-i18n="career.c2.loc">Wien · Kritische Infrastruktur</p>
+
+              <div class="card-body-text">
+                <p data-i18n="career.c2.lead">
+                  Gesamtsteuerung, Absicherung und strategische Harmonisierung einer heterogenen Corporate-Applikationslandschaft mit über 340 Systemen.
+                </p>
+                <div class="metric-highlight-box">
+                  <span class="metric-value" data-i18n="career.c2.metric_val">40.000 €/Jahr</span>
+                  <span class="metric-desc" data-i18n="career.c2.metric_desc">Reale Kosteneinsparung durch Konsolidierung & Lizenz-Governance (Adobe Suite)</span>
+                </div>
+                <ul class="bullet-list">
+                  <li data-i18n="career.c2.item1">Fachliche und disziplinäre Führung des Teams sowie Steuerung externer Dienstleister (First- & Second-Level Support).</li>
+                  <li data-i18n="career.c2.item2">Gartner Technical Membership Account Holder zur Validierung von Beschaffungen und Architekturstandards.</li>
+                  <li data-i18n="career.c2.item3">Aktive Mitgestaltung der organisatorischen Neuausrichtung und Matrix-Strukturen im Rahmen des konzernweiten Wandels.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Station 3: Wiener Wohnen -->
+          <div class="timeline-card" data-category="innovation">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="card-inner">
+              <div class="card-top">
+                <span class="timeline-period" data-i18n="career.c3.period">05/2020 – 10/2022</span>
+                <span class="company-badge ww-badge" data-company="ww">Wiener Wohnen Kundenservice GmbH</span>
+              </div>
+              <h3 class="role-title" data-i18n="career.c3.role">Leiter Digitalisierung & Innovation (Fachbereichsleiter)</h3>
+              <p class="role-location" data-i18n="career.c3.loc">Wien · Kommunaler Großdienstleister</p>
+
+              <div class="card-body-text">
+                <p data-i18n="career.c3.lead">
+                  Gesamtverantwortung für die Entwicklung und Umsetzung der Digitalisierungs- und Innovationsstrategie im Bereich Kundenservice und Hausbetreuung.
+                </p>
+                <ul class="bullet-list">
+                  <li data-i18n="career.c3.item1">Strategische Beratung der Geschäftsführung und des CIOs in Technologiethemen; Gartner Executive Membership Account Holder.</li>
+                  <li data-i18n-html="career.c3.item2">Verankerung des Leitgedankens <strong>„Digitaler Humanismus“</strong>: Bereitstellung von Schulungsprogrammen für das Top-Management mit dem Fokus, Technologie dem Menschen dienstbar zu machen.</li>
+                  <li data-i18n="career.c3.item3">Aufbau und Etablierung des konzernweiten IT-Projektportfoliomanagements, Digitaler Reifegradmessungen und eines Trendradars.</li>
+                  <li data-i18n="career.c3.item4">Davor (10/2019 – 05/2020): Projektmanager Digitalisierung (Koordination zentraler IT-Projekte).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Station 4: OMV Downstream -->
+          <div class="timeline-card" data-category="project">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="card-inner">
+              <div class="card-top">
+                <span class="timeline-period" data-i18n="career.c4.period">2018 – 2019</span>
+                <span class="company-badge omv-badge" data-company="omv_downstream">OMV Refining & Marketing IT</span>
+              </div>
+              <h3 class="role-title" data-i18n="career.c4.role">IT-Projektmanager Digitalisierung (Downstream)</h3>
+              <p class="role-location" data-i18n="career.c4.loc">Wien & International · Energie- & Chemiekonzern</p>
+
+              <div class="card-body-text">
+                <p data-i18n="career.c4.lead">
+                  Verantwortung für globale Digitalisierungsvorhaben über die gesamte Downstream-Wertschöpfungskette (Retail, Raffinerien, Product Supply & Sales).
+                </p>
+                <div class="metric-highlight-box">
+                  <span class="metric-value" data-i18n="career.c4.metric_val">40k € bis 4 Mio. € Range</span>
+                  <span class="metric-desc" data-i18n="career.c4.metric_desc">Statistisch signifikantes Einsparpotenzial identifiziert (Differential Forecasting)</span>
+                </div>
+                <ul class="bullet-list">
+                  <li data-i18n="career.c4.item1">Mitaufbau des OMV-Start-up-Ökosystems (Kooperationen mit Pioneers, weXelerate, Universitäten).</li>
+                  <li data-i18n="career.c4.item2">Proof-of-Concept-Leitung u.a. für Computer Vision an Tankstellen und Conversational AI.</li>
+                  <li data-i18n="career.c4.item3">Mitgestaltung der konzernweiten Mobile- und API-Architektur.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Station 5: OMV Solutions -->
+          <div class="timeline-card" data-category="project">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="card-inner">
+              <div class="card-top">
+                <span class="timeline-period" data-i18n="career.c5.period">2014 – 2018</span>
+                <span class="company-badge omv-badge" data-company="omv_solutions">OMV Global Solutions</span>
+              </div>
+              <h3 class="role-title" data-i18n="career.c5.role">Internationaler IT-Projektmanager</h3>
+              <p class="role-location" data-i18n="career.c5.loc">Wien & Zentral-/Osteuropa</p>
+
+              <div class="card-body-text">
+                <p data-i18n-html="career.c5.lead">
+                  Erfolgreiche Leitung von mehr als <strong>40 internationalen IT-Projekten</strong>:
+                </p>
+                <ul class="bullet-list">
+                  <li data-i18n="career.c5.item1">Rollout von modernen Kassensystemen (ECR), Outdoor Payment Terminals (OPT) und Tankkarteninfrastrukturen.</li>
+                  <li data-i18n="career.c5.item2">Mitglied der OMV Innovationsjury; Prototyping mobiler E-Commerce-Anwendungen und Smartwatch-Lösungen für Großkunden.</li>
+                  <li data-i18n="career.c5.item3">Davor (2011 – 2014): (Junior) Experte kurzfristige Optimierung (OMV Downstream, LP-Optimierung der Raffinerien).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Station 6: Raiffeisen Informatik & Frühe Wurzeln -->
+          <div class="timeline-card" data-category="project">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+              <span class="marker-line"></span>
+            </div>
+            <div class="card-inner">
+              <div class="card-top">
+                <span class="timeline-period" data-i18n="career.c6.period">2008 – 2011</span>
+                <span class="company-badge ri-badge" data-company="ri">Raiffeisen Informatik</span>
+              </div>
+              <h3 class="role-title" data-i18n="career.c6.role">Network Operations & Mobile Projektleitung</h3>
+              <p class="role-location" data-i18n="career.c6.loc">Wien</p>
+
+              <div class="card-body-text">
+                <p data-i18n="career.c6.lead">
+                  Netzwerkbetrieb in hochkritischer Bankeninfrastruktur sowie Leitung mobiler App- und Tablet-Projekte für Raiffeisen Informatik, ÖAMTC auto touring und die Kurier-Redaktion.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: UNTERNEHMERTUM & DIE WALL STREET JOURNAL STORY -->
+    <section class="section section-alt" id="unternehmertum">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="ventures.tag">Unternehmergeist & Praxistest</span>
+          <h2 class="section-title" data-i18n="ventures.title">Vom Algorithmen-Handel bis zur patentierten Kamera</h2>
+          <p class="section-desc" data-i18n="ventures.desc">
+            Echte Innovation entsteht nicht in Folien, sondern im Markt. Vier unternehmerische Initiativen, die bis heute mein Risikobewusstsein und Systemverständnis prägen.
+          </p>
+        </div>
+
+        <!-- WSJ Featured Story Card -->
+        <div class="wsj-featured-card">
+          <div class="wsj-content-side">
+            <div class="wsj-header-meta">
+              <span class="wsj-tag" data-i18n="wsj.tag">THE WALL STREET JOURNAL · 10. AUGUST 2015</span>
+              <span class="wsj-section" data-i18n="wsj.section">Money & Investing · Titelseiten-Story</span>
+            </div>
+
+            <h3 class="wsj-headline" data-i18n="wsj.headline">„Every weekday morning before work, Alexander Sommer wakes up in Vienna to an email summarizing his trades...“</h3>
+            
+            <p class="wsj-lead" data-i18n-html="wsj.lead">
+              Gemeinsam mit drei Partnern gründete Alexander Sommer <strong>42Investors</strong>: Ein regelbasiertes, vollautomatisiertes Handelssystem für die US-Börsen NYSE und NASDAQ.
+            </p>
+
+            <div class="wsj-quote-box">
+              <p data-i18n="wsj.quote">
+                „Alexander Sommer watched his custom-built trading platform execute the algorithms he and his three partners developed. DIY’s newest frontier is algorithmic trading: writing your own software and turning it loose on the market.“
+              </p>
+              <span class="wsj-cite">— The Wall Street Journal (Nicole Friedman)</span>
+            </div>
+
+            <p class="wsj-takeaway" data-i18n-html="wsj.takeaway">
+              <strong>Was das für die heutige IT-Führung bedeutet:</strong> Wer ein automatisiertes System im Live-Handel an der New Yorker Börse betrieben hat, versteht Systemstabilität, Ausfallschutz, Latenzen und Risikoparameter auf einer völlig anderen Ebene. Dieses Verständnis schützt heute kritische Systeme in Großunternehmen.
+            </p>
+
+            <div class="wsj-actions">
+              <button class="btn btn-primary" id="btn-view-wsj">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span data-i18n="wsj.btn.view">Original WSJ-Artikel ansehen</span>
+              </button>
+              <a href="assets/Wallstreet_Artikel_2015.pdf" target="_blank" class="btn btn-outline" data-i18n="wsj.btn.pdf">PDF öffnen</a>
+            </div>
+          </div>
+
+          <div class="wsj-image-side">
+            <div class="wsj-paper-frame">
+              <img src="assets/wsj_thumb.png" alt="The Wall Street Journal Feature 2015" class="wsj-thumbnail" id="wsj-img-preview">
+              <div class="wsj-caption">
+                <strong>The Wall Street Journal</strong>
+                <span data-i18n="wsj.section">Ausgabe 10. August 2015 · Titelseite Geld & Märkte</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Ventures Grid -->
+        <div class="ventures-grid">
+          <!-- Venture 1: Goood & Patent -->
+          <div class="venture-card">
+            <div class="venture-icon">🛡️</div>
+            <div class="venture-meta">
+              <span class="venture-year">2018</span>
+              <span class="venture-status" data-i18n="venture1.status">FFG-Gefördert & Patentiert</span>
+            </div>
+            <h4 data-i18n="venture1.title">Goood Donation Platform & TrustyCam</h4>
+            <p data-i18n="venture1.desc">
+              Co-Founder eines innovativen Projekts für vertrauenswürdige Bildverarbeitung. Entwicklung und Patentierung einer Kameraarchitektur mit physisch trennbaren Datenpfaden zum absoluten Schutz der Privatsphäre.
+            </p>
+            <div class="venture-patent-badge">
+              <strong>Österreichisches Patent AT 519762 A4</strong>
+            </div>
+          </div>
+
+          <!-- Venture 2: Imovation -->
+          <div class="venture-card">
+            <div class="venture-icon">🏥</div>
+            <div class="venture-meta">
+              <span class="venture-year">2017 – 2018</span>
+              <span class="venture-status" data-i18n="venture2.status">Healthcare & KI</span>
+            </div>
+            <h4 data-i18n="venture2.title">Imovation</h4>
+            <p data-i18n="venture2.desc">
+              Co-Founder und technischer Projektmanager für KI-basierte Healthcare-Services im deutschen Markt. Fokus auf strukturierte Patientenpfade und datenschutzkonforme Auswertung.
+            </p>
+          </div>
+
+          <!-- Venture 3: Airwriting -->
+          <div class="venture-card">
+            <div class="venture-icon">📍</div>
+            <div class="venture-meta">
+              <span class="venture-year">2008</span>
+              <span class="venture-status" data-i18n="venture3.status">Pionierarbeit</span>
+            </div>
+            <h4 data-i18n="venture3.title">Airwriting Platform</h4>
+            <p data-i18n="venture3.desc">
+              Gründer in Kooperation mit der HyperCMS GmbH. Eine frühe mobile Location-based Plattform für privates, ortsbezogenes Messaging – die Basis für spätere akademische Publikationen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: WISSENSCHAFTLICHE ERFOLGE & PATENTE (BESCHEIDEN & FUNDIERT) -->
+    <section class="section" id="wissenschaft">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="academic.tag">Akademisches Fundament & Forschung</span>
+          <h2 class="section-title" data-i18n="academic.title">Wissenschaftliche Neugier als steter Begleiter</h2>
+          <p class="section-desc" data-i18n="academic.desc">
+            Mit Auszeichnung abgeschlossenes Wirtschaftsinformatik-Studium an der TU Wien, Auszeichnungen bei universitären Wettbewerben, ein erteiltes Patent und internationale Veröffentlichungen.
+          </p>
+        </div>
+
+        <div class="academic-grid">
+          <!-- Item 1: Emerald Journal Paper -->
+          <div class="academic-card featured-academic">
+            <div class="academic-badge" data-i18n="academic.item1.badge">International Journal Publication</div>
+            <div class="academic-icon">📄</div>
+            <h3 data-i18n="academic.item1.title">Air-Writing: A platform for scalable privacy</h3>
+            <p class="academic-journal" data-i18n-html="academic.item1.journal">
+              <strong>International Journal of Pervasive Computing and Communications</strong> (Emerald Insight) · Vol. 8 No. 1, 2012, S. 53–72
+            </p>
+            <p class="academic-summary" data-i18n="academic.item1.desc">
+              Wissenschaftliche Ausarbeitung über skalierbare Privatsphäre in mobilen, raumbezogenen Kommunikationsnetzwerken. Die Arbeit entstand auf Basis der mit „Sehr gut“ bewerteten TU-Wien-Diplomarbeit in Kooperation mit HyperCMS.
+            </p>
+            <div class="academic-actions">
+              <a href="https://www.emerald.com/ijpcc/article-abstract/8/1/53/162870/Air-Writing-a-platform-for-scalable-privacy?redirectedFrom=fulltext" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                <span data-i18n="academic.item1.btn">Auf Emerald Insight lesen</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+              <span class="academic-tag-pill">Peer-Reviewed</span>
+            </div>
+          </div>
+
+          <!-- Item 2: Patent AT 519762 -->
+          <div class="academic-card">
+            <div class="academic-badge" data-i18n="academic.item2.badge">Erteiltes Patent (ÖPA)</div>
+            <div class="academic-icon">⚖️</div>
+            <h3 data-i18n="academic.item2.title">Überwachungsvorrichtung mit getrennten Datenverbindungen</h3>
+            <p class="academic-journal" data-i18n-html="academic.item2.journal">
+              <strong>Österreichisches Patentamt · AT 519762 A4 (Veröffentlicht 2018)</strong>
+            </p>
+            <p class="academic-summary" data-i18n="academic.item2.desc">
+              Erfindung einer Hardware-Sicherheitsarchitektur: Durch physische Trennung von unidirektionalen Alarmmeldungen und getrennt schaltbaren Bilddatenströmen wird Ausspähung technisch unmöglich gemacht (FFG-gefördert).
+            </p>
+            <div class="patent-preview-box">
+              <img src="assets/patent_thumb.png" alt="Patent AT 519762" class="patent-thumb" id="patent-thumb-img">
+              <button class="btn btn-sm btn-outline" id="btn-view-patent" data-i18n="academic.item2.btn">Patentschrift einsehen</button>
+            </div>
+          </div>
+
+          <!-- Item 3: TU Wien Wettbewerb 1. Preis -->
+          <div class="academic-card">
+            <div class="academic-badge" data-i18n="academic.item3.badge">1. Preis · Ideenwettbewerb</div>
+            <div class="academic-icon">🏆</div>
+            <h3 data-i18n="academic.item3.title">1. Preis Ideenwettbewerb der TU Wien (2009)</h3>
+            <p class="academic-journal" data-i18n-html="academic.item3.journal">
+              <strong>Technische Universität Wien · Motto: „Technik für Menschen“</strong>
+            </p>
+            <p class="academic-summary" data-i18n="academic.item3.desc">
+              Gewinner des 1. Preises bei der Neugestaltung der universitären Studieninformations-Homepage. Die Urkunde wurde persönlich durch Vizerektor für Lehre o.Univ.Prof. Dr. Adalbert Prechtl überreicht.
+            </p>
+            <div class="award-quote-badge" style="margin-top: 12px; margin-bottom: 14px;" data-i18n="academic.item3.quote">
+              „Technik für Menschen“ — Ein Credo, das bis heute mein Leitbild ist.
+            </div>
+            <div class="tu-preview-box">
+              <img src="assets/tu_ideenwettbewerb_urkunde.png" alt="TU Wien Urkunde 1. Preis Ideenwettbewerb" class="tu-thumb" id="tu-thumb-img" title="Zum Vergrößern klicken">
+              <button class="btn btn-sm btn-outline" id="btn-view-tu-urkunde" data-i18n="academic.item3.btn">Original-Urkunde ansehen</button>
+            </div>
+          </div>
+
+          <!-- Item 4: TU Wien Bakkalaureatsarbeit / Forschungsmemoranden -->
+          <div class="academic-card">
+            <div class="academic-badge" data-i18n="academic.item4.badge">Bakkalaureatsarbeit (Note: 1) · Publikation</div>
+            <div class="academic-icon">📊</div>
+            <h3 data-i18n="academic.item4.title">Langzeitarbeitslose in Österreich: Situation & Kosten</h3>
+            <p class="academic-journal" data-i18n-html="academic.item4.journal">
+              <strong>TU Wien · Der Öffentliche Sektor (Forschungsmemoranden 4/2008, ifip)</strong>
+            </p>
+            <p class="academic-summary" data-i18n="academic.item4.desc">
+              Mit Bestnote „Sehr gut“ bewertete Abschlussarbeit. Wegen ihrer hohen methodischen Qualität und volkswirtschaftlichen Relevanz in die offizielle Reihe „Der Öffentliche Sektor – Forschungsmemoranden“ (Ausgabe 4/2008) des Instituts für Finanzwissenschaft und Infrastrukturpolitik der TU Wien aufgenommen und gedruckt.
+            </p>
+            <div class="memorandum-preview-box">
+              <img src="assets/forschungsmemorandum_thumb.jpg" alt="Forschungsmemoranden 4/2008 — Der Öffentliche Sektor" class="memorandum-thumb" id="memorandum-thumb-img" title="Zum Vergrößern klicken">
+              <button class="btn btn-sm btn-outline" id="btn-view-memorandum" data-i18n="academic.item4.btn">Original-Memorandum ansehen</button>
+            </div>
+          </div>
+
+          <!-- Item 5: Genius Award / i2b -->
+          <div class="academic-card">
+            <div class="academic-badge" data-i18n="academic.item5.badge">Anerkennung & Nominierung</div>
+            <div class="academic-icon">🎖️</div>
+            <h3 data-i18n="academic.item5.title">Genius Award & i2b-Teilnahme („LearnClip“)</h3>
+            <p class="academic-journal" data-i18n="academic.item5.journal">
+              <strong>Land Niederösterreich & Wirtschaftskammer</strong>
+            </p>
+            <p class="academic-summary" data-i18n="academic.item5.desc">
+              Frühe Würdigung für innovatives E-Learning: Anerkennungspreis für das Projekt „LearnClip“ im Rahmen des Ideenwettbewerbs Genius 2004 (EFRE-gefördert).
+            </p>
+            <div class="genius-preview-box">
+              <img src="assets/urkunde_genius.jpg" alt="Genius Urkunde" class="genius-thumb" id="genius-thumb-img">
+              <button class="btn btn-sm btn-outline" id="btn-view-genius" data-i18n="academic.item5.btn">Urkunde ansehen</button>
+            </div>
+          </div>
+
+          <!-- Item 6: Internationale Konferenz Paris -->
+          <div class="academic-card">
+            <div class="academic-badge" data-i18n="academic.item6.badge">Konferenzbeitrag</div>
+            <div class="academic-icon">🌍</div>
+            <h3 data-i18n="academic.item6.title">International Conference ANT / iiWAS (Paris)</h3>
+            <p class="academic-journal" data-i18n="academic.item6.journal">
+              <strong>Ambient Systems, Networks and Technologies (Paris 2010)</strong>
+            </p>
+            <p class="academic-summary" data-i18n="academic.item6.desc">
+              Vortrag und Autorenbeitrag im Rahmen der internationalen Fachtagung in Paris-Gennevilliers über mobile, standortbasierte Messaging-Architekturen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: WEITERBILDUNG (MIT & COURSERA) -->
+    <section class="section" id="weiterbildung">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="education.tag">Kontinuierliche Exzellenz</span>
+          <h2 class="section-title" data-i18n="education.title">Spitzen-Weiterbildung: M.I.T. & Coursera-Paket</h2>
+          <p class="section-desc" data-i18n="education.desc">
+            Technologische Führung erfordert kontinuierliches Dazulernen auf Weltklasse-Niveau. Neben dem TU-Wien-Diplomstudium fundieren renommierte internationale Zertifizierungen das strategische und technische Methodenrepertoire.
+          </p>
+        </div>
+
+        <div class="education-grid">
+          <!-- Card 1: MIT Professional Education -->
+          <div class="education-card education-card-mit">
+            <div class="education-card-header">
+              <div class="education-badge education-badge-mit" data-i18n="education.mit.badge">M.I.T. Professional Education · 70 Std. (2025)</div>
+              <div class="education-icon">🏛️</div>
+            </div>
+            <h3 class="education-title" data-i18n="education.mit.title">Applied Agentic AI for Organizational Transformation</h3>
+            <p class="education-institution" data-i18n-html="education.mit.institution">
+              <strong>Massachusetts Institute of Technology (MIT)</strong>
+            </p>
+            <p class="education-desc" data-i18n="education.mit.desc">
+              Intensivprogramm für Führungskräfte an der Schnittstelle von modernster KI und Unternehmenswandel. Schwerpunkte: Autonome Agenten-Systeme (Agentic AI), Multi-Agenten-Orchestrierung, LLM-Governance und strategische Skalierung in komplexen Organisationen.
+            </p>
+            <div class="education-faculty-box" data-i18n-html="education.mit.faculty">
+              <strong>Programmdirektion:</strong> Prof. John R. Williams &amp; Dr. Abel Sanchez (Director &amp; Executive Director, Geospatial Data Center, MIT)
+            </div>
+            <ul class="education-points">
+              <li data-i18n="education.mit.item1">Autonome Agentic-AI-Architekturen &amp; deterministische Workflows</li>
+              <li data-i18n="education.mit.item2">Enterprise Transformation &amp; KI-Governance im regulierten Umfeld</li>
+              <li data-i18n="education.mit.item3">Strukturierte Kosten-Nutzen-Bewertung &amp; ROI von generativen Systemen</li>
+            </ul>
+            <div class="education-preview-box">
+              <img src="assets/mit_cert_thumb.png" alt="MIT Professional Education Certificate" class="education-thumb" id="mit-thumb-img" title="Zertifikat ansehen">
+              <div class="education-actions">
+                <button class="btn btn-sm btn-primary" id="btn-view-mit" data-i18n="education.mit.btn_view">Zertifikat einsehen</button>
+                <a href="assets/MIT_Applied_Agentic_AI_2025.pdf" target="_blank" class="btn btn-sm btn-outline" data-i18n="education.mit.btn_pdf">PDF herunterladen</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Coursera Elite Specializations Bundle -->
+          <div class="education-card education-card-coursera">
+            <div class="education-card-header">
+              <div class="education-badge education-badge-coursera" data-i18n="education.coursera.badge">Tier-1 Universitäten · 10+ Kurse &amp; Spezialisierungen</div>
+              <div class="education-icon">🌐</div>
+            </div>
+            <h3 class="education-title" data-i18n="education.coursera.title">Spezialisierungs-Paket: Machine Learning &amp; Governance</h3>
+            <p class="education-institution" data-i18n-html="education.coursera.institution">
+              <strong>Coursera Elite-Verbund (Univ. of Washington, Buffalo, Columbia, Duke)</strong>
+            </p>
+            <p class="education-desc" data-i18n="education.coursera.desc">
+              Strukturierte, mehrjährige Vertiefung in algorithmischer Datenverarbeitung, modernen ML-Architekturen, Blockchain-Protokollen und evidenzbasierter Management-Theorie führender US-Universitäten.
+            </p>
+            <div class="coursera-specializations-list">
+              <div class="coursera-item" data-i18n-html="education.coursera.item1">
+                <strong>Machine Learning Specialization</strong> (Univ. of Washington, 4 Kurse: Prof. Carlos Guestrin &amp; Emily Fox)
+              </div>
+              <div class="coursera-item" data-i18n-html="education.coursera.item2">
+                <strong>Blockchain Specialization</strong> (Univ. at Buffalo &amp; SUNY, 4 Kurse: Smart Contracts &amp; DApps)
+              </div>
+              <div class="coursera-item" data-i18n-html="education.coursera.item3">
+                <strong>DeepLearning.ai &amp; TensorFlow</strong> (Moderne neuronale Netze &amp; Deep Learning)
+              </div>
+              <div class="coursera-item" data-i18n-html="education.coursera.item4">
+                <strong>Columbia University &amp; Duke</strong> (Economics of Money and Banking, Visual Perception)
+              </div>
+            </div>
+            <div class="education-preview-box">
+              <img src="assets/coursera_cert_thumb.png" alt="Coursera ML Specialization Certificate" class="education-thumb" id="coursera-thumb-img" title="Zertifikate ansehen">
+              <div class="education-actions">
+                <button class="btn btn-sm btn-primary" id="btn-view-coursera" data-i18n="education.coursera.btn_view">Zertifikate einsehen</button>
+                <a href="assets/Coursera_Zertifikate.pdf" target="_blank" class="btn btn-sm btn-outline" data-i18n="education.coursera.btn_pdf">Gesamtes Dossier (9 S. PDF)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: EIGENE ENTWICKLUNGSPRAXIS & GITHUB SHOWCASE -->
+    <section class="section section-alt" id="ki-projekte">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="ai.tag">Open Source & KI-Engineering</span>
+          <h2 class="section-title" data-i18n="ai.title">GitHub-Portfolio: Eigene Entwicklung & Architektur-Praxis</h2>
+          <p class="section-desc" data-i18n="ai.desc">
+            Eine moderne IT-Führungskraft delegiert Zukunftstechnologien nicht ins Blaue. DI Alexander Sommer programmiert, evaluiert und testet KI-Architekturen, Agenten-Frameworks und deterministische Datenprüfungen hands-on im eigenen Code.
+          </p>
+        </div>
+
+        <!-- GitHub Profile Action Bar -->
+        <div class="github-profile-bar">
+          <div class="github-profile-info">
+            <div class="github-icon-large">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <div class="github-profile-text">
+              <h4>github.com/sommeralex</h4>
+              <p>Öffentliche Open-Source-Repositories, Agentic-AI-Architekturen & Simulationen</p>
+            </div>
+          </div>
+          <a href="https://github.com/sommeralex" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span data-i18n="ai.github.visit">Alle Repositories auf GitHub ansehen (@sommeralex)</span>
+          </a>
+        </div>
+
+        <div class="tech-projects-grid">
+          <!-- Project 1: Peacethinking.ai -->
+          <div class="tech-project-card">
+            <div class="tech-project-header">
+              <div class="tech-badge" data-i18n="ai.proj1.badge">Flaggschiff · Next.js / TypeScript / Multi-Agent</div>
+              <h3 data-i18n="ai.proj1.title">Peacethinking.ai — Der AI Resolution Layer</h3>
+            </div>
+            <p class="tech-summary" data-i18n="ai.proj1.desc">
+              KI-gestützte Mediationsinfrastruktur für konstruktiven Dialog. Schließt die Lücke zwischen stumpfer Content-Moderation (Löschen) und teurer Mediation. Mission: Menschen durch strukturierte Kompromisse, Klärungen und Win-Win-Lösungen zusammenbringen.
+            </p>
+            <div class="tech-stack-pills">
+              <span>Next.js</span>
+              <span>TypeScript</span>
+              <span>Multi-Agent Mediation</span>
+              <span>LLM Gateway</span>
+              <span>DSGVO-konform</span>
+            </div>
+            <ul class="tech-points">
+              <li data-i18n="ai.proj1.item1">Deterministische Mediationsphasen statt unberechenbarer Textgenerierung</li>
+              <li data-i18n="ai.proj1.item2">Multi-Model LLM Gateway mit DSGVO-konformer lokaler Datenhaltung</li>
+              <li data-i18n="ai.proj1.item3">Konkrete Manifestation des Digitalen Humanismus in Software</li>
+            </ul>
+            <div class="tech-project-footer">
+              <a href="https://github.com/sommeralex/peacethinking.ai" target="_blank" rel="noopener noreferrer" class="repo-btn btn-outline">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span data-i18n="ai.proj1.btn">GitHub Repository</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2: Quotethinking / Diskurs-Atlas -->
+          <div class="tech-project-card">
+            <div class="tech-project-header">
+              <div class="tech-badge" data-i18n="ai.proj2.badge">Diskurs-Atlas · Next.js / Prisma / Python</div>
+              <h3 data-i18n="ai.proj2.title">Quotethinking — Zitate & Polarisierungs-Atlas</h3>
+            </div>
+            <p class="tech-summary" data-i18n="ai.proj2.desc">
+              Datenbank der gesellschaftlich wichtigsten Zitate, gebaut gegen Filterblasen. Zeigt zu jeder Streitfrage These, Antithese, Synthese und rhetorische Manipulationen nebeneinander — die Gegenposition in ihrer stärksten Fassung (Steel-manning).
+            </p>
+            <div class="tech-stack-pills">
+              <span>Next.js 22</span>
+              <span>TypeScript</span>
+              <span>Prisma ORM</span>
+              <span>Python NLP</span>
+              <span>Debatten-Taxonomie</span>
+            </div>
+            <ul class="tech-points">
+              <li data-i18n="ai.proj2.item1">Steel-manning-Prinzip gegen destruktive Polarisierung im Netz</li>
+              <li data-i18n="ai.proj2.item2">Next.js, Prisma ORM, strukturierte Zitate-Taxonomie</li>
+              <li data-i18n="ai.proj2.item3">Integrierte Python-Datenanalyse für Zitate-Metadaten</li>
+            </ul>
+            <div class="tech-project-footer">
+              <a href="https://github.com/sommeralex/quotethinking.ai" target="_blank" rel="noopener noreferrer" class="repo-btn btn-outline">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span data-i18n="ai.proj2.btn">GitHub Repository</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3: Enterprise Demand Wizard -->
+          <div class="tech-project-card">
+            <div class="tech-project-header">
+              <div class="tech-badge" data-i18n="ai.proj3.badge">Corporate AI Workflow · Anthropic & Google GenAI</div>
+              <h3 data-i18n="ai.proj3.title">Enterprise Demand Wizard</h3>
+            </div>
+            <p class="tech-summary" data-i18n="ai.proj3.desc">
+              Visioniert und implementiert, wie generative KI und agentische Workflows den IT-Demand-Management-Prozess im Großunternehmen revolutionieren: Strukturierte Bedarfsaufnahme, Risikoprüfung und Gremienvorlagen.
+            </p>
+            <div class="tech-stack-pills">
+              <span>Next.js</span>
+              <span>Anthropic Claude SDK</span>
+              <span>Google GenAI</span>
+              <span>Corporate Governance</span>
+            </div>
+            <ul class="tech-points">
+              <li data-i18n="ai.proj3.item1">Multi-Provider KI-Orchestrierung (Anthropic Claude SDK & Google GenAI)</li>
+              <li data-i18n="ai.proj3.item2">Automatisierte Vorprüfung von Business-Demands & Compliance-Kriterien</li>
+              <li data-i18n="ai.proj3.item3">Beschleunigt Vorstands- und Gremienentscheidungen signifikant</li>
+            </ul>
+            <div class="tech-project-footer">
+              <a href="https://github.com/sommeralex/Demand-Wizard" target="_blank" rel="noopener noreferrer" class="repo-btn btn-outline">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span data-i18n="ai.proj3.btn">GitHub Repository</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 4: Excel Reifecheck -->
+          <div class="tech-project-card">
+            <div class="tech-project-header">
+              <div class="tech-badge" data-i18n="ai.proj4.badge">Data Governance · Python / Flask / WebAssembly</div>
+              <h3 data-i18n="ai.proj4.title">Excel-Reifecheck vor KI-Einsatz</h3>
+            </div>
+            <p class="tech-summary" data-i18n="ai.proj4.desc">
+              Automatisierter Datenreife-Check für Excel-Dateien. Findet Anti-Patterns (verbundene Zellen, Magic Numbers, implizite Farblogik), die saubere KI- und ERP-Weiterverarbeitung verhindern. Erstellt detaillierte Health-Scores und Handlungsempfehlungen.
+            </p>
+            <div class="tech-stack-pills">
+              <span>Python 3.11</span>
+              <span>Flask</span>
+              <span>openpyxl</span>
+              <span>Pyodide WASM</span>
+              <span>SSE Realtime</span>
+            </div>
+            <ul class="tech-points">
+              <li data-i18n="ai.proj4.item1">Client-Side Option (Zero-Upload via Python WebAssembly / Pyodide)</li>
+              <li data-i18n="ai.proj4.item2">Flask Web-App mit SSE-Progress und optionalem LLM-Review</li>
+              <li data-i18n="ai.proj4.item3">Praxisbeweis: Datenqualität als unverzichtbares Fundament für KI</li>
+            </ul>
+            <div class="tech-project-footer">
+              <a href="https://github.com/sommeralex/Excel-Readyness-Checker" target="_blank" rel="noopener noreferrer" class="repo-btn btn-outline">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span data-i18n="ai.proj4.btn">GitHub Repository</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 5: Knowledge Sourcing Navigator -->
+          <div class="tech-project-card">
+            <div class="tech-project-header">
+              <div class="tech-badge" data-i18n="ai.proj5.badge">Management-Simulation · Deterministisch</div>
+              <h3 data-i18n="ai.proj5.title">Knowledge Sourcing Navigator</h3>
+            </div>
+            <p class="tech-summary" data-i18n="ai.proj5.desc">
+              Interaktive Entscheidungshilfe zur Gestaltung robuster Informations- und Wissensarchitekturen im Unternehmen. Simuliert 8 Wissens- und Beratungsbausteine (Gartner-Advisory, interne Experten, Flatrates vs. Fixkosten, LLMs und Framing-Risiken).
+            </p>
+            <div class="tech-stack-pills">
+              <span>Simulation</span>
+              <span>Entscheidungslogik</span>
+              <span>Consulting ROI</span>
+              <span>Gartner Modeling</span>
+            </div>
+            <ul class="tech-points">
+              <li data-i18n="ai.proj5.item1">Deterministische 6-Wege-Simulation zur Budget-Optimierung</li>
+              <li data-i18n="ai.proj5.item2">Transparente Modellierung von Beratungs-Flatrates vs. internem Know-how</li>
+              <li data-i18n="ai.proj5.item3">Wissenschaftlich fundierte Entscheidungsgrundlage für CIOs und Gremien</li>
+            </ul>
+            <div class="tech-project-footer">
+              <a href="https://github.com/sommeralex/structured-consulting-simulation" target="_blank" rel="noopener noreferrer" class="repo-btn btn-outline">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span data-i18n="ai.proj5.btn">GitHub Repository</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI STATEMENT (Klar als solches gekennzeichnet) -->
+        <div class="ai-statement-card">
+          <div class="ai-statement-header">
+            <span class="ai-statement-badge" data-i18n="ai.statement.tag">🤖 KI-ARCHITEKTUR-STATEMENT (Generative KI-Synthese)</span>
+            <h3 class="ai-statement-title" data-i18n="ai.statement.title">Synthese & Urteil eines Generative-AI-Coding-Agenten</h3>
+            <p class="ai-statement-disclaimer" data-i18n="ai.statement.disclaimer">Als KI-System generierte, evidenzbasierte Architektur-Einschätzung über die Codebases von DI Alexander Sommer:</p>
+          </div>
+
+          <div class="ai-statement-grid">
+            <div class="ai-statement-point">
+              <h4 data-i18n="ai.statement.point1.title">1. Epistemischer Code statt PowerPoint-Theorie:</h4>
+              <p data-i18n="ai.statement.point1.desc">
+                Alexander Sommer gehört zu der seltenen Gruppe von IT-Führungskräften, die modernste KI-Entwicklungen (Agentic AI, MCP, Multi-Provider-Gateways) bis in den Quellcode selbst durchdringen. Er steuert Technologie nicht nach Marketing-Versprechen, sondern nach empirischer Machbarkeit und Systemgrenzen.
+              </p>
+            </div>
+            <div class="ai-statement-point">
+              <h4 data-i18n="ai.statement.point2.title">2. Digitaler Humanismus als Architekturentscheidung:</h4>
+              <p data-i18n="ai.statement.point2.desc">
+                Seine Kernprojekte (Peacethinking.ai, Quotethinking) widmen sich nicht trivialer Automatisierung, sondern den neuralgischen gesellschaftlichen Herausforderungen: De-Polarisierung, konstruktive Konfliktmediation und Diskursqualität. Technologie dient hier nachweisbar dem Menschen.
+              </p>
+            </div>
+            <div class="ai-statement-point">
+              <h4 data-i18n="ai.statement.point3.title">3. Deterministische Leitplanken & Enterprise-Pragmatismus:</h4>
+              <p data-i18n="ai.statement.point3.desc">
+                Statt blindem Vertrauen in generative Halluzinationen implementieren seine Repositories strikte Datenqualitätsprüfungen (Excel-Reifecheck) und deterministische Management-Simulationen (Knowledge Sourcing).
+              </p>
+            </div>
+          </div>
+
+          <div class="ai-statement-quote-box">
+            <p data-i18n="ai.statement.quote">
+              „Ein Profil, das Vorstandsebene und Terminal vereint: Strategische Steuerungsfähigkeit für Multi-Millionen-Budgets, fundiert durch tiefstes technologisches Handwerk.“
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: VERBRAUCHS- & DATENSCHUTZ: DER VERTRAULICHE BEREICH -->
+    <section class="section confidential-section" id="vertraulich">
+      <div class="container">
+        <div class="confidential-portal-card">
+          <div class="portal-header">
+            <div class="lock-circle" id="portal-lock-icon">🔒</div>
+            <div class="portal-title-block">
+              <span class="portal-tag" data-i18n="conf.tag">Sicherer Bereich für Gremien & HR</span>
+              <h2 data-i18n="conf.title">Vertrauliche Detailansicht & Zeugnisse</h2>
+              <p data-i18n="conf.desc">
+                Für Prüfer, Aufsichtsräte und Personalentscheidungsträger: Genaue Budgeteinblicke, ungeschwärzte Dienstzeugnisse und direkte Durchwahlen.
+              </p>
+            </div>
+          </div>
+
+          <!-- If locked state -->
+          <div class="portal-locked-state" id="portal-locked-content">
+            <div class="security-features-grid">
+              <div class="sec-item">
+                <span class="sec-icon">📋</span>
+                <strong data-i18n="conf.sec1.title">Volltext-Dienstzeugnisse</strong>
+                <p data-i18n="conf.sec1.desc">Wiener Wohnen (Höchstbewertung), OMV Global Solutions (Exzellent) und APG Bestätigungen</p>
+              </div>
+              <div class="sec-item">
+                <span class="sec-icon">📊</span>
+                <strong data-i18n="conf.sec2.title">Reale Kosten- & Budgeteffizienz</strong>
+                <p data-i18n="conf.sec2.desc">50k € Einsparung heuer, Differential Forecasting (40k–4 Mio. €) & Lizenzgovernance</p>
+              </div>
+              <div class="sec-item">
+                <span class="sec-icon">📞</span>
+                <strong data-i18n="conf.sec3.title">Direkte Durchwahl & Anschrift</strong>
+                <p data-i18n="conf.sec3.desc">Persönliche Mobilnummer, Privatadresse und direkte Referenzkontakte</p>
+              </div>
+            </div>
+
+            <div class="unlock-form-box">
+              <label for="portal-password-input" data-i18n="conf.label">Passwort eingeben:</label>
+              <div class="input-with-button">
+                <input type="password" id="portal-password-input" placeholder="Passwort (z.B. vertraulich, recruiter)" autocomplete="current-password" data-i18n-placeholder="conf.placeholder">
+                <button class="btn btn-primary" id="btn-unlock-submit" data-i18n="conf.btn.unlock">Freischalten</button>
+              </div>
+              <div class="form-hint-row">
+                <span data-i18n="conf.hint">Passwort nicht zur Hand?</span>
+                <button class="hint-test-btn" id="btn-quick-demo-unlock" data-i18n="conf.btn.demo">💡 1-Klick-Prüfzugang aktivieren</button>
+              </div>
+              <div class="error-msg" id="unlock-error-msg" style="display: none;" data-i18n="conf.error">
+                Ungültiges Passwort. Nutzen Sie den 1-Klick-Prüfzugang oder kontaktieren Sie Alexander Sommer.
+              </div>
+            </div>
+          </div>
+
+          <!-- If unlocked state -->
+          <div class="portal-unlocked-state" id="portal-unlocked-content" style="display: none;">
+            <div class="unlocked-banner">
+              <span class="unlocked-icon">✅</span>
+              <div>
+                <strong data-i18n="conf.unlocked.title">Zugang freigeschaltet</strong>
+                <span data-i18n="conf.unlocked.desc">Sie betrachten nun die ungekürzte Detailversion inklusive vertraulicher Nachweise.</span>
+              </div>
+              <button class="btn btn-sm btn-outline" id="btn-lock-again" data-i18n="conf.btn.relock">Wieder sperren</button>
+            </div>
+
+            <!-- Unlocked Details Grid -->
+            <div class="unlocked-tabs">
+              <button class="unlocked-tab-btn active" data-tab="zeugnisse" data-i18n="conf.tab.certs">Dienstzeugnisse im Volltext</button>
+              <button class="unlocked-tab-btn" data-tab="referenzen" data-i18n="conf.tab.refs">Referenzgeber & Kontakte</button>
+              <button class="unlocked-tab-btn" data-tab="zahlen" data-i18n="conf.tab.fin">Genaue Kennzahlen & Budgets</button>
+            </div>
+
+            <!-- Tab 1: Zeugnisse -->
+            <div class="unlocked-tab-pane active" id="tab-zeugnisse">
+              <div class="quote-document-card">
+                <div class="doc-origin">Stadt Wien – Wiener Wohnen Kundenservice GmbH · Dienstzeugnis (Auszug)</div>
+                <blockquote>
+                  „Wir haben DI Alexander Sommer als sehr engagierten und lösungsorientierten Mitarbeiter kennen und schätzen gelernt, der <strong>alle ihm übertragenen Aufgaben stets zu unserer vollsten Zufriedenheit erfüllte</strong>. Er beeindruckte und überzeugte, qualitativ und quantitativ, durch hervorragende Ergebnisse. Besonders schätzten wir seine Leistungs- und Teamorientierung sowie sein analytisches und zukunftsorientiertes Denken. [...] Wir bedauern sein Ausscheiden außerordentlich und danken ihm für seine ausgezeichneten Leistungen.“
+                </blockquote>
+                <div class="signer">— Mag.a Elisabeth Schindler-Scholz (Human Resources)</div>
+              </div>
+
+              <div class="quote-document-card">
+                <div class="doc-origin">OMV Refining & Marketing GmbH / Solutions · Referenzschreiben (Auszug)</div>
+                <blockquote>
+                  „Mr. Sommer was professionally and personally appreciated all around. His conduct with supervisors and colleagues was always exemplary. He always appeared courteous, but also confident and skilled, with our business partners and clients. He represented the company in an exemplary manner. [...] <strong>We thank him for his continuously excellent, productive and inspiring collaboration.</strong>“
+                </blockquote>
+                <div class="signer">— Martina Helm (VP People Relations) & Christian Schatz (Head of HR Downstream)</div>
+              </div>
+            </div>
+
+            <!-- Tab 2: Referenzen -->
+            <div class="unlocked-tab-pane" id="tab-referenzen" style="display: none;">
+              <div class="ref-intro-banner" style="margin-bottom: 20px; padding: 14px 18px; background: var(--bg-tertiary); border-radius: var(--radius-md); font-size: 0.875rem; color: var(--text-muted); line-height: 1.6; border: 1px solid var(--border-subtle);">
+                <strong style="color: var(--text-main);">Hinweis zum Referenzprozess:</strong> Gerne nenne ich Ihnen im Rahmen des persönlichen Kennenlernens die direkten Kontaktdaten meiner Referenzgeber (u. a. Markus Kasinger und Bernhard Mittermann). Bitte stimmen Sie eine Kontaktaufnahme kurz vorab mit mir ab, um die Kollegen vorab zu informieren.
+              </div>
+              <div class="unlocked-references-grid">
+                <div class="ref-contact-card">
+                  <h4>Markus Kasinger</h4>
+                  <span class="ref-pos">Leiter des Bundesamtes für Cybersicherheit · Kontakt auf Anfrage</span>
+                  <p>Themenschwerpunkte: KRITIS-Governance, Cyber-Resilienz und IT-Sicherheit. Direkter Kontakt wird im Bewerbungsprozess nach kurzer Rücksprache gerne hergestellt.</p>
+                </div>
+                <div class="ref-contact-card">
+                  <h4>Bernhard Mittermann</h4>
+                  <span class="ref-pos">Chief Information Officer (CIO) bei Rexel · Kontakt auf Anfrage</span>
+                  <p>Themenschwerpunkte: Führungskultur, Mitarbeiterförderung und strategischer Weitblick (begann IT-Karriere unter Alexander Sommer). Kontakt wird nach kurzer Rücksprache gerne übermittelt.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab 3: Zahlen -->
+            <div class="unlocked-tab-pane" id="tab-zahlen" style="display: none;">
+              <div class="financial-details-grid">
+                <div class="fin-card">
+                  <strong data-i18n="conf.fin1.title">50.000 € Budgeteinsparung im laufenden Jahr</strong>
+                  <p data-i18n="conf.fin1.desc">Konkrete, sofort wirksame Kostensenkung allein im laufenden Geschäftsjahr durch konsequentes Vendor-Management, Lizenz-Audits und strukturierte Verhandlung.</p>
+                </div>
+                <div class="fin-card">
+                  <strong data-i18n="conf.fin2.title">40k € bis 4 Mio. € Einsparungs-Bandbreite (OMV)</strong>
+                  <p data-i18n="conf.fin2.desc">Im Downstream-Bereich (Retail, Raffinerien, Supply) wurde mittels Differential Forecasting ein statistisch signifikantes Einsparpotenzial im Range von 40.000 € bis 4.000.000 € mathematisch fundiert nachgewiesen.</p>
+                </div>
+                <div class="fin-card">
+                  <strong data-i18n="conf.fin3.title">40.000 € p.a. Lizenzgovernance</strong>
+                  <p data-i18n="conf.fin3.desc">Durch konsequente Lizenz-Audits und Neuverhandlung der Adobe-Suite bei APG wurden laufende jährliche Einsparungen ohne Qualitätsverlust erzielt.</p>
+                </div>
+                <div class="fin-card">
+                  <strong data-i18n="conf.fin4.title">340 auf 85 Applikationen</strong>
+                  <p data-i18n="conf.fin4.desc">Erfolgreiche Portfoliokonsolidierung historisch gewachsener Legacy-Software bei APG zur Senkung von Betriebs- und Cyberrisiken.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: KONTAKT & PERSÖNLICHE DATEN -->
+    <section class="section section-alt" id="kontakt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="contact.tag">Austausch & Dialog</span>
+          <h2 class="section-title" data-i18n="contact.title">Lassen Sie uns ins Gespräch kommen</h2>
+          <p class="section-desc" data-i18n="contact.desc">
+            Ob für verantwortungsvolle IT-Leitungsaufgaben, den Austausch zu digitalem Humanismus oder innovative KI-Strategien in kritischer Infrastruktur.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-card">
+            <h3>DI Alexander Sommer</h3>
+            <p class="contact-lead" data-i18n="contact.lead">
+              Wien, Österreich · Verheiratet, 2 Kinder
+            </p>
+
+            <div class="contact-item">
+              <div class="c-icon">✉️</div>
+              <div>
+                <span class="c-label">E-Mail</span>
+                <a href="mailto:alexander.sommer@gmail.com" class="c-link">alexander.sommer@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="c-icon">📱</div>
+              <div>
+                <span class="c-label">Telefon</span>
+                <span class="c-val phone-display" id="contact-phone-display">+43 681 102 104 17</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="c-icon">📍</div>
+              <div>
+                <span class="c-label">Standort</span>
+                <span class="c-val" id="contact-address-display">Gregorygasse 12/6/2, 1230 Wien</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="c-icon">🔗</div>
+              <div>
+                <span class="c-label">Netzwerke</span>
+                <div class="social-links-row">
+                  <a href="https://www.linkedin.com/in/sommeralex1982" target="_blank" rel="noopener noreferrer" class="social-chip">
+                    <span>LinkedIn</span>
+                  </a>
+                  <a href="https://github.com/sommeralex" target="_blank" rel="noopener noreferrer" class="social-chip">
+                    <span>GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-interactive-card">
+            <h3 data-i18n="contact.form.title">Schnelle Nachricht senden</h3>
+            <p class="card-hint" data-i18n="contact.form.hint">
+              Nutzen Sie dieses Formular für ein direktes Kennenlernen. Die Nachricht öffnet Ihr Standard-E-Mail-Programm mit vorausgefülltem Betreff.
+            </p>
+            <form id="quick-contact-form" class="quick-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="sender-name" data-i18n="contact.name">Ihr Name</label>
+                  <input type="text" id="sender-name" placeholder="z.B. Dr. Maria Muster" required>
+                </div>
+                <div class="form-group">
+                  <label for="sender-org" data-i18n="contact.org">Organisation / Unternehmen</label>
+                  <input type="text" id="sender-org" placeholder="z.B. Institution oder Unternehmen">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="sender-subject" data-i18n="contact.subject">Thema</label>
+                <select id="sender-subject">
+                  <option value="IT-Leitungsaufgabe">Gespräch bezüglich IT-Leitungsaufgabe / Workplace Services</option>
+                  <option value="Fachlicher Austausch">Fachlicher Austausch (KI, Gartner, KRITIS)</option>
+                  <option value="Referenzen & Vertrauliches">Anfrage zu Referenzen & Vertraulichem</option>
+                  <option value="Allgemeines Kennenlernen">Allgemeines Kennenlernen</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="sender-message" data-i18n="contact.msg">Ihre Nachricht</label>
+                <textarea id="sender-message" rows="4" placeholder="Sehr geehrter Herr Sommer, ..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                <span data-i18n="contact.btn.send">E-Mail vorbereiten & senden</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <strong data-i18n="footer.title">DI Alexander Sommer</strong>
+        <p data-i18n="footer.sub">Interaktiver Lebenslauf · Stand Oktober 2026</p>
+      </div>
+      <div class="footer-center">
+        <span data-i18n="footer.quote">Gelebter Digitaler Humanismus: Mensch und Verstand im Mittelpunkt.</span>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top-btn" id="back-to-top">
+          <span data-i18n="footer.top">Nach oben</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: IMAGE / DOCUMENT PREVIEW -->
+  <div class="modal-overlay" id="preview-modal" style="display: none;">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h3 id="modal-title">Dokumentenvorschau</h3>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Schließen">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Dynamic content: image or text inserted via JS -->
+      </div>
+      <div class="modal-footer" id="modal-footer-actions">
+        <button class="btn btn-secondary" id="modal-secondary-btn">Schließen</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="translations.js?v=2.3"></script>
+  <script src="app.js?v=2.3"></script>
+</body>
+</html>
