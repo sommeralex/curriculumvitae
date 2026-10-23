@@ -195,12 +195,12 @@ const translations = {
     "career.c5.lead": "Erfolgreiche Leitung von mehr als <strong>40 internationalen IT-Projekten</strong>:",
     "career.c5.item1": "Rollout von modernen Kassensystemen (ECR), Outdoor Payment Terminals (OPT) und Tankkarteninfrastrukturen.",
     "career.c5.item2": "Mitglied der OMV Innovationsjury; Prototyping mobiler E-Commerce-Anwendungen und Smartwatch-Lösungen für Großkunden.",
-    "career.c5.item3": "Davor (2011 – 2014): (Junior) Experte kurzfristige Optimierung (OMV Downstream, LP-Optimierung der Raffinerien).",
+    "career.c5.item3": "Davor (11/2011 – 2014): (Junior) Experte kurzfristige Optimierung (OMV Downstream, LP-Optimierung der Raffinerien).",
 
     "career.c6.period": "2008 – 2011",
-    "career.c6.role": "Network Operations & Mobile Projektleitung",
-    "career.c6.loc": "Wien",
-    "career.c6.lead": "Netzwerkbetrieb in hochkritischer Bankeninfrastruktur sowie Leitung mobiler App- und Tablet-Projekte für Raiffeisen Informatik, ÖAMTC auto touring und die Kurier-Redaktion.",
+    "career.c6.role": "Network Operations & Mobile Entwicklung",
+    "career.c6.loc": "Wien & Graz",
+    "career.c6.lead": "Netzwerkbetrieb in hochkritischer Bankeninfrastruktur (Raiffeisen Informatik) sowie Mobile Development für das anwendungsorientierte Forschungskompetenzzentrum evolaris (u.a. Konzeption & Entwicklung der Raiffeisen Club Mobile App).",
 
     // Ventures & WSJ
     "ventures.tag": "Unternehmergeist & Praxistest",
@@ -587,12 +587,12 @@ const translations = {
     "career.c5.lead": "Successful delivery of over <strong>40 international IT projects</strong> across Central and Eastern Europe:",
     "career.c5.item1": "Rollout of modern electronic cash registers (ECR), outdoor payment terminals (OPT), and fleet card infrastructure.",
     "career.c5.item2": "Member of OMV's Innovation Jury; prototyping mobile e-commerce and smartwatch solutions for B2B fleet customers.",
-    "career.c5.item3": "Prior (2011 – 2014): (Junior) Expert Short-Term LP Optimization (OMV Downstream, cross-refinery supply chain).",
+    "career.c5.item3": "Prior (11/2011 – 2014): (Junior) Expert Short-Term LP Optimization (OMV Downstream, cross-refinery supply chain).",
 
     "career.c6.period": "2008 – 2011",
-    "career.c6.role": "Network Operations & Mobile Project Lead",
-    "career.c6.loc": "Vienna",
-    "career.c6.lead": "Network operations in high-security banking infrastructure alongside leading mobile app and tablet projects for Raiffeisen Informatik, auto touring, and Austrian daily newspaper Kurier.",
+    "career.c6.role": "Network Operations & Mobile Development",
+    "career.c6.loc": "Vienna & Graz",
+    "career.c6.lead": "Network operations in mission-critical banking infrastructure (Raiffeisen Informatik) alongside native mobile engineering at the applied research center evolaris (including conceptualization and development of the Raiffeisen Club Mobile App).",
 
     // Ventures & WSJ
     "ventures.tag": "Entrepreneurial Spirit & Validation",
