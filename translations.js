@@ -196,11 +196,17 @@ const translations = {
     "career.c5.item1": "Rollout von modernen Kassensystemen (ECR), Outdoor Payment Terminals (OPT) und Tankkarteninfrastrukturen.",
     "career.c5.item2": "Mitglied der OMV Innovationsjury; Prototyping mobiler E-Commerce-Anwendungen und Smartwatch-Lösungen für Großkunden.",
     "career.c5.item3": "Davor (11/2011 – 2014): (Junior) Experte kurzfristige Optimierung (OMV Downstream, LP-Optimierung der Raffinerien).",
+    "career.c6.period": "01/2011 – 10/2011",
+    "career.c6.role": "Mobile Software Developer",
+    "career.c6.loc": "Graz & Wien",
+    "career.c6.lead": "Entwicklung nativer mobiler Applikationen im anwendungsorientierten FFG-geförderten Forschungskompetenzzentrum (K2/COMET) an der Schnittstelle von Wirtschaft und Wissenschaft:",
+    "career.c6.item1": "Konzeption & native Implementierung der <strong>Raiffeisen Club Mobile App</strong> (Vorteils- und Gutschein-Applikation für Raiffeisen Club-Mitglieder).",
+    "career.c6.item2": "Begleitende angewandte Forschung an neuartigen mobilen Interaktionsmustern und standortbasierten Mehrwertdiensten vor dem Eintritt bei der OMV.",
 
-    "career.c6.period": "2008 – 2011",
-    "career.c6.role": "Network Operations & Mobile Entwicklung",
-    "career.c6.loc": "Wien & Graz",
-    "career.c6.lead": "Netzwerkbetrieb in hochkritischer Bankeninfrastruktur (Raiffeisen Informatik) sowie Mobile Development für das anwendungsorientierte Forschungskompetenzzentrum evolaris (u.a. Konzeption & Entwicklung der Raiffeisen Club Mobile App).",
+    "career.c7.period": "2008 – 2010",
+    "career.c7.role": "Network Operations & Security Infrastructure",
+    "career.c7.loc": "Wien",
+    "career.c7.lead": "Betrieb und Konfiguration hochkritischer Netzwerk- und Sicherheitsinfrastrukturen im Bankenumfeld (Freier Mitarbeiter & Praktikant während des Diplomstudiums an der TU Wien).",
 
     // Ventures & WSJ
     "ventures.tag": "Unternehmergeist & Praxistest",
@@ -589,10 +595,17 @@ const translations = {
     "career.c5.item2": "Member of OMV's Innovation Jury; prototyping mobile e-commerce and smartwatch solutions for B2B fleet customers.",
     "career.c5.item3": "Prior (11/2011 – 2014): (Junior) Expert Short-Term LP Optimization (OMV Downstream, cross-refinery supply chain).",
 
-    "career.c6.period": "2008 – 2011",
-    "career.c6.role": "Network Operations & Mobile Development",
-    "career.c6.loc": "Vienna & Graz",
-    "career.c6.lead": "Network operations in mission-critical banking infrastructure (Raiffeisen Informatik) alongside native mobile engineering at the applied research center evolaris (including conceptualization and development of the Raiffeisen Club Mobile App).",
+    "career.c6.period": "01/2011 – 10/2011",
+    "career.c6.role": "Mobile Software Developer",
+    "career.c6.loc": "Graz & Vienna",
+    "career.c6.lead": "Engineering native mobile applications at the applied FFG-funded research competence center (COMET K2) bridging academia and industry:",
+    "career.c6.item1": "Conceptualization and native development of the <strong>Raiffeisen Club Mobile App</strong> (benefits and loyalty voucher platform for Raiffeisen Club members).",
+    "career.c6.item2": "Applied research into emerging mobile interaction paradigms and location-based value-added services prior to joining OMV.",
+
+    "career.c7.period": "2008 – 2010",
+    "career.c7.role": "Network Operations & Security Infrastructure",
+    "career.c7.loc": "Vienna",
+    "career.c7.lead": "Operation and configuration of mission-critical banking network and security infrastructure (Freelancer & Intern during Diploma studies at TU Wien).",
 
     // Ventures & WSJ
     "ventures.tag": "Entrepreneurial Spirit & Validation",
@@ -808,6 +821,10 @@ const companyNamesI18n = {
       full: "OMV Global Solutions",
       discrete: "Internationaler Energiekonzern (Konzern IT)"
     },
+    evolaris: {
+      full: "evolaris next level GmbH",
+      discrete: "Forschungszentrum für Mobile Services (COMET/FFG)"
+    },
     ri: {
       full: "Raiffeisen Informatik",
       discrete: "Führender Banken-IT-Dienstleister"
@@ -829,6 +846,10 @@ const companyNamesI18n = {
     omv_solutions: {
       full: "OMV Global Solutions",
       discrete: "Global Energy Corporation (Corporate IT)"
+    },
+    evolaris: {
+      full: "evolaris next level GmbH",
+      discrete: "Applied Mobile R&D Competence Center (COMET/FFG)"
     },
     ri: {
       full: "Raiffeisen Informatik",
